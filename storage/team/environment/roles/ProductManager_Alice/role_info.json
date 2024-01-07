@@ -1,0 +1,67 @@
+{
+    "name": "Alice",
+    "profile": "Product Manager",
+    "goal": "efficiently create a successful product that meets market demands and user expectations",
+    "constraints": "utilize the same language as the user requirements for seamless communication",
+    "desc": "",
+    "is_human": false,
+    "subscription": [
+        "metagpt.roles.product_manager.ProductManager",
+        "Alice"
+    ],
+    "recovered": false,
+    "latest_observed_msg": {
+        "id": "5a57203bbb874fe28e1865b72f7595fc",
+        "content": "{\"docs\": {\"20240107102333.json\": {\"root_path\": \"docs/tasks\", \"filename\": \"20240107102333.json\", \"content\": \"{\\\"Required Python packages\\\": [\\\"pyinstaller==4.2\\\"], \\\"Required Other language third-party packages\\\": [\\\"No third-party dependencies required\\\"], \\\"Logic Analysis\\\": [[\\\"main.py\\\", \\\"Contains SimpleHiProgram class with main and output_hi methods\\\"]], \\\"Task list\\\": [\\\"main.py\\\"], \\\"Full API spec\\\": \\\"\\\", \\\"Shared Knowledge\\\": \\\"'main.py' contains the SimpleHiProgram class which is the core of the application.\\\", \\\"Anything UNCLEAR\\\": \\\"\\\"}\"}}}",
+        "instruct_content": {
+            "docs": {
+                "20240107102333.json": {
+                    "root_path": "docs/tasks",
+                    "filename": "20240107102333.json",
+                    "content": "{\"Required Python packages\": [\"pyinstaller==4.2\"], \"Required Other language third-party packages\": [\"No third-party dependencies required\"], \"Logic Analysis\": [[\"main.py\", \"Contains SimpleHiProgram class with main and output_hi methods\"]], \"Task list\": [\"main.py\"], \"Full API spec\": \"\", \"Shared Knowledge\": \"'main.py' contains the SimpleHiProgram class which is the core of the application.\", \"Anything UNCLEAR\": \"\"}"
+                }
+            }
+        },
+        "role": "Eve(Project Manager)",
+        "cause_by": "metagpt.actions.project_management.WriteTasks",
+        "sent_from": "metagpt.roles.project_manager.ProjectManager",
+        "send_to": [
+            "<all>"
+        ]
+    },
+    "builtin_class_name": "ProductManager",
+    "_role_id": "Alice(Product Manager)",
+    "_states": [
+        "0. <class 'metagpt.actions.prepare_documents.PrepareDocuments'>",
+        "1. <class 'metagpt.actions.write_prd.WritePRD'>"
+    ],
+    "_actions": [
+        {
+            "name": "",
+            "context": null,
+            "builtin_class_name": "PrepareDocuments",
+            "prefix": "You are a Product Manager, named Alice, your goal is efficiently create a successful product that meets market demands and user expectations. the constraint is utilize the same language as the user requirements for seamless communication. ",
+            "desc": ""
+        },
+        {
+            "name": "",
+            "context": "",
+            "builtin_class_name": "WritePRD",
+            "prefix": "You are a Product Manager, named Alice, your goal is efficiently create a successful product that meets market demands and user expectations. the constraint is utilize the same language as the user requirements for seamless communication. ",
+            "desc": "",
+            "content": null
+        }
+    ],
+    "_rc": {
+        "state": -1,
+        "watch": [
+            "metagpt.actions.prepare_documents.PrepareDocuments",
+            "metagpt.actions.add_requirement.UserRequirement"
+        ],
+        "react_mode": "react",
+        "max_react_loop": 1
+    },
+    "_subscription": [],
+    "role_class": "ProductManager",
+    "module_name": "metagpt.roles.product_manager"
+}

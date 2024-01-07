@@ -1,0 +1,29 @@
+[
+    {
+        "role_class": "ProductManager",
+        "module_name": "metagpt.roles.product_manager",
+        "role_name": "Alice",
+        "role_sub_tags": [
+            "Alice",
+            "metagpt.roles.product_manager.ProductManager"
+        ]
+    },
+    {
+        "role_class": "Architect",
+        "module_name": "metagpt.roles.architect",
+        "role_name": "Bob",
+        "role_sub_tags": [
+            "metagpt.roles.architect.Architect",
+            "Bob"
+        ]
+    },
+    {
+        "role_class": "ProjectManager",
+        "module_name": "metagpt.roles.project_manager",
+        "role_name": "Eve",
+        "role_sub_tags": [
+            "metagpt.roles.project_manager.ProjectManager",
+            "Eve"
+        ]
+    }
+]
