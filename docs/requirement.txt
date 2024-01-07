@@ -1,0 +1,1 @@
+Design a system that outputs the word 'hi'.
